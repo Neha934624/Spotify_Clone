@@ -1,0 +1,699 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+}
+/* !ARRANGEMENT */
+.main{
+    height: 100vh;
+    display: flex;
+}
+.flex-bar{
+   display: flex;
+   height: 82vh;
+}
+.nav-bar{
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 3.6rem;
+}
+.side-bar{
+   flex-basis: 22%;
+   border-radius: 1rem;
+   padding-top: 3.4rem;
+   margin: 0.2rem 0.2rem 0.2rem ;
+   background-color:#171414;
+   border-radius: 2rem; 
+   margin: 0.5rem 0.5rem ;
+
+}
+.main-bar{
+  background-color: black;
+  flex-basis: 1 0 78%;
+  overflow: auto;
+
+}
+.music-player{
+  background-color: rgb(12, 77, 55);
+  width: 100%;
+  position:fixed;
+  bottom: 0;
+  height: 3.9rem;
+}
+
+/*! SIDE BAR STYLING */
+.library{
+    display: flex;
+    color: white;
+    background-color:#171414;
+    border-radius: 1rem; 
+    font-size: 1.03rem;
+    text-align: center;
+    margin: 0rem;
+    border-radius: 1rem;
+
+}
+#lib{
+    margin: 1.5rem 1rem;
+    font-size: 1.5rem;
+    opacity: 0.8;
+    
+}
+#libr{
+    height: 1rem;
+    font-size: 1.07rem;
+    padding-top: 0.7rem;
+    width: 6rem;
+    opacity: 0.8;
+
+}
+#plus{
+    margin: 1.5rem 1rem;
+    /* padding: 0 1px 2px 2.2rem; */
+    font-size: 1.5rem;
+    margin-left: 6rem;
+    opacity: 0.8;
+    
+}
+#lib:hover{
+    opacity: 1;
+}
+#libr:hover{
+    opacity: 1;
+}
+#plus:hover{
+    opacity: 1;
+}
+/* side-scroll */
+.side-scroll{
+    padding:0;
+  
+}
+.content1,.content2{
+    margin: 0.4rem;
+    background-color:  #2a2a2a;
+    color: white;
+    padding-top: 1px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    opacity: 1; 
+    border-radius: 10px;  
+}
+.content1 h2,.content2 h2{
+    font-size: 1rem;
+    opacity: 1;
+}
+.content1 p,.content2 p{
+    font-size: 0.8rem;
+    opacity: 0.9;
+}
+.content1 button,.content2 button{
+    padding: 0.45rem;
+    border-radius: 1rem;
+    background-color: white;
+    opacity: 0.8;
+    border: none;
+}
+.content1 button:hover{
+    transform: scale(1.06);
+}
+.content2 button:hover{
+    transform: scale(1.06);
+}
+.foot{
+    display: flex;
+    font-size: 0.7rem;
+    flex-wrap: wrap;
+    margin: 14px;
+    opacity: 0.9;
+    line-height: 0.1rem;
+}
+.foot p{
+    padding: 0 6px ;
+}
+.globe{
+    border: 1px solid white;
+    display: inline;
+    padding: 4px;
+    border-radius: 1rem;
+    margin-left: 1rem;
+    opacity: 0.9;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+/* !NAV BAR */
+.nav-bar{
+    display: flex;
+}
+.part1{
+    
+    flex-basis: 40%;
+    background-color: black;
+}
+
+.part2{
+    flex-basis: 55%;
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.part3{
+    flex-basis: 20%;
+    background-color:black;
+    display: flex;
+    justify-content:end;
+    /* margin: 6px 5px 6px 10px; */
+    padding: 5px;
+    
+
+}
+
+/* !MAIN BAR */
+.mb{
+    padding: 15px  0 0 15px;
+    font-size: 1.45rem;
+    font-weight: 550;
+
+}
+.singers{
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    text-align: start;
+    padding-left: 10px;
+    position: relative;
+    bottom: 10px;
+
+}
+.artist{
+    position: relative;
+    bottom: 17px;
+    text-align: start;
+    padding-left: 10px;
+    font-weight: 100;
+    opacity: 0.8;
+    font-size: 0.79rem;
+    
+
+}
+.img1{
+    text-align: center;
+    cursor: pointer;
+}
+
+.img1:hover .play i{
+    visibility: visible;
+    
+}
+.img1:hover{
+    background: linear-gradient(black,#272626,#2a2a2a);   
+}
+.i1{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 0;
+    padding: 0;
+}
+.play i{
+    border: 2px solid;
+    padding: 10px;
+    border-radius: 50%;
+    background-color:#1bd760 ;
+    border: none;
+    position: relative;
+    z-index: 10;
+    bottom: 7rem;
+    left: 2.4rem;
+    display:inline;
+    visibility: hidden;
+    
+    
+}
+/* ******************************************************************************************* */
+.musician{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  overflow: hidden; 
+  height: 200px; 
+}
+ /* ******************************************************************************************* */
+
+#ar1{
+    display: none;
+}
+
+/* SQUARE 2 */
+.p1{
+    aspect-ratio: 5/4;
+    width: 100%;
+    height: auto;
+    
+
+}
+/* ******************************************************************************************* */
+.square{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+}
+/* ******************************************************************************************* */
+.albums{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    text-align: start;
+    padding-left: 10px;
+    position: relative;
+    bottom: 10px;
+
+}
+.content{
+    position: relative;
+    bottom: 17px;
+    text-align: start;
+    padding-left: 10px;
+    font-weight: 100;
+    opacity: 0.8;
+    font-size: 0.79rem;
+}
+.pr1{
+    cursor: pointer;
+    margin: 0.5rem;
+    
+}
+.pr1:hover{
+    background: linear-gradient(black,#272626,#2a2a2a);  
+   
+}
+/* !FOOTER LOGIC */
+.music-player{
+    display: flex;
+    background-color: black;
+}
+.playing{
+    
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    
+
+}
+.side{
+    flex-basis: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.side h4{
+    font-size: 0.8rem;
+    margin: 0.4rem;
+    font-weight: 200;
+    opacity: 0.9;
+    
+}
+.side h4 p{
+    font-size: 0.5rem;
+    position: relative;
+    bottom: 0.3rem;
+    font-weight: 200;
+    opacity: 0.9;
+}
+.side #music{
+    margin: 4px;
+    opacity: 0.8;
+}
+.mid{
+  flex-basis: 60%;
+
+}
+.end{
+    flex-basis: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 1.2rem;
+    
+
+}
+.end i{
+    padding: 6px;
+    opacity: 0.7;
+
+}
+.end i:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+.end #rang{
+    height: 4px;
+    width: 50px;
+
+}
+/* !mid */
+.mid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+}
+.mid1 i{
+    padding: 0 10px ;
+}
+.mid1 i:hover{
+    opacity: 1;
+    transform: scale(1.27);
+}
+.mid span{
+    font-size: 0.67rem;
+
+}
+#f1{
+    font-size: 0.9rem;
+    opacity: 0.7;
+
+}
+#f2{
+    font-size: 1.05rem;
+    opacity: 0.87;
+
+}
+#f3{
+    font-size: 1.6rem;
+    position: relative;
+    top: 2px;
+    opacity: 0.97;
+    text-align: center;
+
+}
+.mid #rangeplay{
+    height: 3.3px;
+    width: 340px;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+#rangeplay::-webkit-slider-thumb{
+    appearance: none;
+    height: 12px;
+    width: 12px;
+    background-color:#1bd760 ;
+    border-radius: 50%;
+    position: relative;
+    bottom: 5px;
+
+}
+#rangeplay::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.22rem;
+}
+ 
+
+
+
+/* ******************************************************************************************* */
+
+@media screen  and (max-width:1044px){
+    .musician{
+        grid-template-columns: repeat(4, 1fr); 
+        
+    }
+    .square{
+        grid-template-columns: repeat(3, 1fr);  
+    }
+
+
+    @media screen and (max-width:850px) {
+        .musician{
+            grid-template-columns: repeat(3, 1fr); 
+            
+        }
+        .square{
+            grid-template-columns: repeat(2, 1fr);  
+        }
+
+
+        @media screen  and  (max-width:700px){
+
+            .musician{
+                grid-template-columns: repeat(2, 1fr); 
+                
+            }
+                @media screen and  (max-width:550px) {
+                    .side-bar{
+                        display: none;
+
+                    }
+                    .musician{
+                        grid-template-columns: repeat(3, 1fr); 
+                        
+                    }
+                    @media (max-width:499px){
+                        #text{
+                            display: none;
+                        }
+                        .signup{
+                            display: none;
+                        }
+                        .login{
+                            display: none;
+                        }
+                        #bar-nav{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 25px;
+                        }
+                        .nav-bar #spoti{
+                            font-size: 2rem;
+                            opacity: 0.9;
+                            padding: 10px;
+                        }
+    
+                    }
+                }
+    
+            
+            
+        }
+        
+    }
+    
+}
+
+/* ******************************************************************************************* */
+
+@media (min-width:500px){
+    #bar-nav{
+        display: none;
+    }
+   
+    .signup{
+        border-radius: 1rem;
+        background-color: black;
+        color: white;
+        height: 28px;
+        width: 50px;
+        display: flex;
+        text-align: center;
+        justify-content:center;
+        align-items: center;
+        padding: 1px;
+        opacity: 0.8;
+        margin-right: 16px;
+        margin-left: 10px;
+        margin-top: 3px;  
+    }
+    .signup:hover{
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    .login{
+        border: 2px solid white;
+        border-radius: 1rem;
+        background-color: white;
+        color: black;
+        height: 28px;
+        width: 70px;
+        display: flex;
+        text-align: center;
+        justify-content:center;
+        align-items: center;
+        margin-right: 16px;
+        margin-left: 10px;
+        margin-top: 3px;   
+        cursor: pointer; 
+    }
+    .login:hover{
+        transform: scale(1.1);
+    }
+    .nav-bar #spoti{
+        font-size: 2rem;
+        opacity: 0.9;
+        padding: 10px;
+    }
+    .nav-bar #login{
+        font-size: 2rem;
+        opacity: 0.9;
+        padding: 10px;
+    }
+
+    #text{
+        border-radius: 2rem;
+        border: none;
+        background-color:white;
+        width: 25rem;
+        height: 2.2rem;
+        background-color: #2a2a2a;
+        padding-left: 3rem;
+        position: relative;
+        right: 20%;
+        color: white;
+    }
+    #text:hover{
+        opacity: 1;
+        
+    }
+
+    #home{
+        font-size: 127%;
+        margin: 1rem;
+        display: flex;
+        padding-right: 6rem;
+        /* border-radius: 50%; */    
+    }
+    #search:hover{
+        opacity: 1;
+    }
+    #search{
+        font-size: 120%;
+        margin: 1rem;
+        position: relative;
+        z-index: 5;
+        position: relative;
+        right: 12.8%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.7;
+    }
+    #search:hover{
+        transform: scale(1.2);
+    }
+    #browse{
+        position: relative;
+        z-index: 3;
+        right: 26%;
+        padding-right: 40px;
+        padding-left: 10px;
+        opacity: 0.8;
+        font-size: 1.4rem;
+        margin-right: 10px;
+        border-left: 1px solid white ;
+        
+
+    }
+    input::placeholder{
+        font-size: 1.2rem;
+        
+    }
+    
+}
+@media (max-width:500px) and (min-width:200px){
+    #home{
+        position: relative;
+        /* right:3rem; */
+        bottom: 3px;
+        margin: 2px;
+        padding: 8px;
+        border: 2px solid;
+        border-radius: 50%;
+        background-color: #2a2a2a;
+        border: none;
+        margin: 10px;
+        
+    }
+    #browse{
+        display: none;
+        
+    }
+    .part1{
+        flex-basis: 10%;
+    }
+    .part2{
+        display: flex;
+        justify-content: flex-start;
+        padding: 20px;
+        font-size: 1.2rem;
+        position: relative;
+        
+    }
+    #search{
+        padding: 8px;
+        position: relative;
+        bottom: 2px;
+        border: 1px solid;
+        border: none;
+        background-color:#2a2a2a;
+        border-radius: 50%;
+    }
+    #search:hover,#home:hover{
+        transform: scale(1.1);
+    }
+    /* ^footer */
+    .music-player{
+        display: flex;
+    }
+    .side{
+        flex-basis: 30%;
+     }
+    .playing{
+        height: 35px;
+        margin-left: 5px;
+        
+        
+    }
+    .side h4{
+        font-size: 0.5rem;
+        width: 20px;
+    }
+    .side h4 p{
+        display: none;
+    }
+    #music{
+        display: none;
+    }
+    .mid{
+       flex-basis: 80%;
+    }
+    .mid .mid2 #rangeplay{
+        width: 8rem;
+    }
+    #f1{
+        display: none;
+    }
+    #f2{
+         font-size: 1rem;
+    }
+    #f3{
+        font-size: 1.4rem;
+    }
+    .curr-time{
+        height: 0.3rem;
+    }
+
+    .end{
+        display: none;
+    }
+    
+}
